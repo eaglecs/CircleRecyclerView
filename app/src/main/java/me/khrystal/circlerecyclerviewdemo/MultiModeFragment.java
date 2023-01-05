@@ -1,9 +1,9 @@
 package me.khrystal.circlerecyclerviewdemo;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,10 +44,13 @@ public class MultiModeFragment extends Fragment {
     private List<Integer> mImgList;
     private boolean mIsNotLoop;
 
+//    private Integer[] mImgs = {
+//            R.drawable.img_1, R.drawable.img_2, R.drawable.img_3, R.drawable.img_4,
+//            R.drawable.img_5, R.drawable.img_6, R.drawable.img_7, R.drawable.img_8,
+//            R.drawable.img_9, R.drawable.img_10, R.drawable.img_11, R.drawable.img_12
+//    };
     private Integer[] mImgs = {
-            R.drawable.img_1, R.drawable.img_2, R.drawable.img_3, R.drawable.img_4,
-            R.drawable.img_5, R.drawable.img_6, R.drawable.img_7, R.drawable.img_8,
-            R.drawable.img_9, R.drawable.img_10, R.drawable.img_11, R.drawable.img_12
+            R.drawable.img_1, R.drawable.img_2
     };
 
     public static MultiModeFragment newInstance(@ModeType.ModeTypeChecker int modeType) {
